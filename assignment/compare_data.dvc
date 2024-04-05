@@ -1,0 +1,6 @@
+outs:
+- md5: b46d6cbf67274692ddfa100479ab9154.dir
+  size: 1064
+  nfiles: 2
+  hash: md5
+  path: compare_data

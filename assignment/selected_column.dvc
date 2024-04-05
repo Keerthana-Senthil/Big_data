@@ -1,0 +1,6 @@
+outs:
+- md5: 51522d1a651733cad29564d75231f05f.dir
+  size: 1477357
+  nfiles: 2
+  hash: md5
+  path: selected_column
