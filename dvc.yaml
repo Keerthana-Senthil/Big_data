@@ -1,0 +1,17 @@
+stages:
+  first_stage:
+    cmd: python assignment/download.py
+    deps:
+      - assignment/params.yaml
+  second_stage:
+    cmd: python assignment/prepare.py
+    deps:
+      - assignment/download.py
+  third_stage:
+    cmd: python assignment/process.py
+    deps:
+      - assignment/prepare.py
+  fourth_stage:
+    cmd: python assignment/evaluate.py
+    deps:
+      - assignment/process.py

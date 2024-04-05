@@ -1,0 +1,30 @@
+schema: '2.0'
+stages:
+  first_stage:
+    cmd: python assignment/download.py
+    deps:
+    - path: assignment/params.yaml
+      hash: md5
+      md5: 04fc0a273a8edeefa7d97c68a002b3d8
+      size: 19
+  second_stage:
+    cmd: python assignment/prepare.py
+    deps:
+    - path: assignment/download.py
+      hash: md5
+      md5: 2d7ddda4bcb1176f3d13b58470ac890f
+      size: 3199
+  third_stage:
+    cmd: python assignment/process.py
+    deps:
+    - path: assignment/prepare.py
+      hash: md5
+      md5: bd6be008d2810952f56ccf3dce20b92d
+      size: 3722
+  fourth_stage:
+    cmd: python assignment/evaluate.py
+    deps:
+    - path: assignment/process.py
+      hash: md5
+      md5: abf2a8c26758fd4398e29de211e3d295
+      size: 4860

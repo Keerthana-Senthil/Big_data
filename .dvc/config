@@ -1,2 +1,4 @@
 [core]
-    autostage = true
+    remote = mygithub
+['remote "mygithub"']
+    url = https://github.com/Keerthana-Senthil/Big_data.git
