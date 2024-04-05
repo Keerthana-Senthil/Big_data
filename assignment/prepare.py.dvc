@@ -1,0 +1,5 @@
+outs:
+- md5: ffdebd2946cab25a0fb0d0eeed6d3d17
+  size: 3364
+  hash: md5
+  path: prepare.py
